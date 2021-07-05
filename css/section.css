@@ -1,0 +1,117 @@
+.section {
+  height: auto;
+  padding: 10px 30px;
+  color: var(--grey);
+  display: block;
+}
+
+.section h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.section h3 {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.highlight-button {
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+  display: inline-block;
+  color: var(--blue);
+  font-size: 25px;
+  font-style: italic;
+}
+
+.highlight-button:hover {
+  font-weight: bold;
+  color: var(--navy);
+}
+
+.section-highlight {
+  margin: auto;
+  background: var(--lightblue);
+  width: 55vw;
+  height: 350px;
+  padding: 20px 40px;
+  overflow: auto;
+  filter: drop-shadow(-4px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.section-highlight img {
+  margin: auto;
+  height: 98%;
+  max-width: 50%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.section-highlight p {
+  color: var(--navy);
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 16px;
+  display: inline-block;
+  width: 45%;
+  vertical-align: text-top;
+  overflow: auto;
+}
+
+.section-highlight strong {
+  font-size: 19px;
+}
+
+@media only screen and (max-width: 812px) {
+  .section-highlight {
+    width: 80vw;
+    height: 300px;
+    padding: 20px 10px;
+    text-align: center;
+  }
+
+  .section-highlight img {
+    height: 260px;
+    max-width: 99%;
+  }
+
+  .section-highlight .float-right {
+    float: none;
+  }
+
+  .section-highlight p {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 812px) {
+  .section-highlight {
+    width: 80vw;
+    height: 300px;
+    padding: 20px 10px;
+    text-align: center;
+  }
+
+  .section-highlight img {
+    height: 260px;
+    max-width: 99%;
+  }
+
+  .section-highlight .float-right {
+    float: none;
+  }
+
+  .section-highlight p {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1210px) {
+  .section-highlight {
+    padding: 10px 20px;
+  }
+
+  .section-highlight p {
+    font-size: 12px;
+  }
+}

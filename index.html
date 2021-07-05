@@ -1,0 +1,228 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="name" content="Sofie Duntugan Portfolio">
+  <meta name="author" content="Sofie Duntugan">
+  <title>Sofie Duntugan</title>
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/banner.css">
+  <link rel="stylesheet" href="css/section.css">
+  <link rel="stylesheet" href="css/project.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Alegreya Sans|Nunito Sans|Fira Code">
+</head>
+<body onload="onLoad()">
+
+<div class="nav">
+  <a>Sofie Duntugan</a>
+</div>
+
+<div class="mobile-alert" id="content-hidden-alert">
+  <p>Some content is hidden on mobile devices.</p>
+  <a onclick="topHide('content-hidden-alert')" class="float-right">&times;</a>
+</div>
+
+<div class="banner">
+  <h1>Hi, I'm&nbsp;</h1>
+  <h1 class="me-description">Sofie.</h1>
+  <h1 class="init-hidden me-description">a student.</h1>
+  <h1 class="init-hidden me-description">slightly addicted to coffee.</h1>
+  <div class="content">
+    <p>I study computer science, political science, and a bit of math at Northeastern University.
+      Learn more <a href="#me">about me</a> and <a href="#projects">my projects</a> below!</p>
+  </div>
+  <div class="contacts">
+    <a href="mailto:duntugan.s@northeastern.edu">
+      <img src="https://img.icons8.com/material-rounded/96/ffffff/mail.png"
+           alt="duntugan.s@northeastern.edu"/>
+    </a>
+    <a href="https://github.com/SofieDunt">
+      <img src="https://img.icons8.com/ios-glyphs/480/ffffff/github.png" alt="SofieDunt"/>
+    </a>
+  </div>
+</div>
+
+<div class="section" id="me">
+  <h3>I have a background in
+    <button onclick="setActiveSubject(SUBJECTS.CS)" class="highlight-button" id="cs-button">computer
+      science,
+    </button>
+    <button onclick="setActiveSubject(SUBJECTS.PS)" class="highlight-button" id="ps-button">
+      political
+      science,
+    </button>
+    and
+    <button onclick="setActiveSubject(SUBJECTS.ENG)" class="highlight-button"
+            id="engineering-button">
+      engineering...
+    </button>
+  </h3>
+  <div class="section-highlight init-none" id="cs">
+    <img src="assets/comp-sci.png" alt="comp-sci background"/>
+    <p class="float-right">
+      I started teaching myself some basic Python on Codecademy in middle school, then started
+      diving into Java, ROBOTC, HTML, CSS, and Javascript in high school, where I took
+      <strong>CS classes</strong> and joined my school's
+      <strong>FIRST Robotics</strong> team as a programmer.
+      <br><br>
+      In college, I've taken courses like Discrete Structure, Database Design, and
+      Object-Oriented Design while pursuing new
+      <strong>projects to have fun and help my community</strong>.
+    </p>
+  </div>
+  <div class="section-highlight init-none" id="ps">
+    <p>
+      My journey in public service began in middle school when I joined Model United Nation's on a
+      whim. In high school, I pursued this interest further as a delegate in Youth and Government,
+      where I developed ways for high-school students to <strong>safeguard the environment and
+      advocate for equitable criminal justice</strong>.
+      <br><br>
+      In college, I've taken courses like American Government, Comparative Politics, and
+      International Relations to explore concepts in political science that I can apply as I
+      <strong>research public policy and consider technology's impact on society</strong>.
+    </p>
+    <img src="assets/poli-sci.png" alt="political-science background" class="float-right">
+  </div>
+  <div class="section-highlight init-none" id="engineering">
+    <img src="assets/engineering.png" alt="engineering background">
+    <p class="float-right">
+      As an engineering pathway student in high school, I loved designing <strong>seemingly
+      ridiculous solutions to seemingly impossible problems</strong> and making them come alive
+      in Autodesk Fusion, whether it be a bio-habitat for algae, a three-loop roller coaster or an
+      ostrich-inspired bipedal walking system.
+      <br><br>
+      Although I'm no longer on any robotics teams, I find ways to <strong>apply the engineering
+      design process</strong> to problems I encounter and enjoy <strong>guiding young students
+      through engineering and design-oriented projects</strong>.
+    </p>
+  </div>
+
+  <h3 class="right-text">which inspires me to develop technical solutions to the pressing issues we
+    face today.</h3>
+</div>
+
+<div class="section" id="projects">
+  <div class="backdrop blue-tri-bt-r">
+    <h2>Right now, I'm...</h2>
+
+    <div class="project purple-fill purple-border">
+      <h3>managing a project && developing software</h3>
+      <div class="description right-margin code">
+        <a href="https://www.c4cneu.com/"><h4>Code4Community</h4></a>
+        <p>
+          while (leading a team of ten developers) {
+        </p>
+        <p class="left-margin">
+          planning, tracking, and contributing to the development of a tree
+          inventorying, reservation, and adoption system in React and Typescript to help
+          <a href="https://treeboston.org/">@SpeakForTheTrees</a> expand Boston's urban forest
+        </p>
+        <p>
+          }
+        </p>
+      </div>
+      <img src="assets/C4C_Circle.png" alt="C4C" class="small-img"/>
+    </div>
+
+    <div class="project sky-blue-border right">
+      <h3>researching digital equity</h3>
+      <div class="description sm-right-margin nunito">
+        <h4>Northeastern University, PEAK Bridge-Builder Award</h4>
+        <p>
+          conducting a literature review and data collection as part of a team to find solutions to
+          support older adults isolated by the COVID-19 pandemic and decrease the generational and
+          socioeconomic gap in technology access and use
+        </p>
+      </div>
+      <img src="assets/research.png" alt="research" class="small-img"/>
+    </div>
+
+    <div class="project aqua-fill aqua-border no-image story">
+      <h3>developing a choose-your-own-story player and builder</h3>
+      <div class="description code">
+        <h4>Personal Project</h4>
+        <p>
+          text-based choose-your-own-story adventure games in Java?
+        </p>
+        <p class="init-hidden story-part">
+          &nbsp;&nbsp;> that's the idea, inspired by the plethora of apps that require $5 to make a
+          reasonable decision<br>
+          in a user-friendly GUI?
+        </p>
+        <p class="init-hidden story-part">
+          &nbsp;&nbsp;> apparently the command line isn't super popular, so yeah<br>
+          can you play them?
+        </p>
+        <p class="init-hidden story-part">
+          &nbsp;&nbsp;> of course<br>
+          create them?
+        </p>
+        <p class="init-hidden story-part">
+          &nbsp;&nbsp;> yep<br>
+          import and export them?
+        </p>
+        <p class="init-hidden story-part">
+          &nbsp;&nbsp;> how else would you share wild adventures with friends?<br>
+          demonstrating object-oriented programming principles and patterns?
+        </p>
+        <p class="init-hidden story-part">
+          &nbsp;&nbsp;> including the MVC design pattern!
+        </p>
+      </div>
+      <button onclick="handleStoryClick()" id="story-button">Continue...</button>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>Some of my completed projects include...</h2>
+  <div class="project sky-blue-border no-image">
+    <h3>this site</h3>
+    <div class="description code">
+      <h4>Personal Project | July 2021</h4>
+      <p>
+        a site designed in Figma and written with HTML, CSS, and a touch of Javascript to keep
+        track of my latest experiences
+      </p>
+    </div>
+  </div>
+
+  <div class="project aqua-border right">
+    <h3>an image processor</h3>
+    <div class="description right-margin code">
+      <h4>Class Project | June 2021</h4>
+      <p>
+        an application capable of importing images to, exporting images from, and modifying images
+        in a user's photo library. written in Java and tested with JUnit.
+      </p>
+      <br>
+      <p>Supported modifications include:</p>
+      <br>
+      <button onclick="setButterflyImage(BUTTERFLIES.DEFAULT)">Load Default</button>
+      <button onclick="setButterflyImage(BUTTERFLIES.BLUR)">Blur</button>
+      <button onclick="setButterflyImage(BUTTERFLIES.SHARPEN)">Sharpen</button>
+      <button onclick="setButterflyImage(BUTTERFLIES.SEPIA)">Sepia</button>
+      <button onclick="setButterflyImage(BUTTERFLIES.MONOCHROME)">Greyscale</button>
+      <button onclick="setButterflyImage(BUTTERFLIES.MOSAIC)">Mosaic</button>
+    </div>
+    <img src="assets/butterfly/default.PNG" alt="butterfly" class="large-img" id="butterfly-image"/>
+  </div>
+
+  <p>Code that is not public on <a href="https://github.com/SofieDunt">my GitHub</a> may be viewed
+    upon request.</p>
+</div>
+
+<div class="footer">
+  <p>Created by Sofie Duntugan | Updated July 4, 2021
+    <span class="float-right">
+  Feel free to reach out at
+    <a href="mailto:duntugan.s@northeastern.edu"><strong>duntugan.s@northeastern.edu</strong></a>!
+  </span>
+  </p>
+</div>
+</body>
+<script src="main.js"></script>
+</html>

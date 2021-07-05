@@ -1,0 +1,51 @@
+.banner {
+  padding: 150px 5vw 75px 5vw;
+  color: white;
+  background: linear-gradient(239.48deg, rgba(59, 132, 237, 0.8) -13.67%, rgba(9, 31, 145, 0) 79.67%), var(--navy);
+}
+
+.banner .content {
+  padding-bottom: 100px;
+  width: 40vw;
+}
+
+.banner h1 {
+  font-size: 64px;
+  display: inline-block;
+}
+
+.banner p {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 18px;
+}
+
+.banner a {
+  text-decoration: none;
+  font-weight: bold;
+  font-style: italic;
+  color: var(--lightblue);
+}
+
+.banner .init-hidden {
+  font-size: 0;
+}
+
+.me-description {
+  transition: opacity 0.4s
+}
+
+.contacts {
+  width: 100%;
+  text-align: right;
+}
+
+.contacts img {
+  height: 45px;
+}
+
+@media only screen and (max-width: 813px) {
+  .banner .content {
+    font-size: 28px;
+    width: 100%;
+  }
+}

@@ -1,0 +1,103 @@
+.project {
+  width: 70vw;
+  height: auto;
+  padding: 30px 20px;
+  border-radius: 20px;
+  margin: 15px 0;
+  border: 2px solid;
+  background: white;
+}
+
+.no-image {
+  width: 60vw;
+}
+
+.project h3 {
+  color: var(--navy);
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 15px;
+  margin: 0;
+}
+
+.project h4 {
+  color: var(--lightgrey);
+  font-family: inherit;
+  font-size: 18px;
+  vertical-align: text-top;
+  margin-bottom: 2px;
+}
+
+.project img {
+  display: inline-block;
+  max-width: 22%;
+  margin: auto 0;
+}
+
+.small-img {
+  max-height: 150px;
+}
+
+.large-img {
+  max-height: 200px;
+}
+
+.project .description {
+  display: inline-block;
+  width: 75%;
+  vertical-align: top;
+}
+
+.project p {
+  margin: 0;
+  font-family: inherit;
+}
+
+.description .left-margin {
+  margin-left: 20px;
+}
+
+.no-image .description {
+  width: 100%;
+}
+
+.story .description {
+  margin-bottom: 15px;
+}
+
+.project button {
+  font-family: "Fira Code", sans-serif;
+  font-size: 14px;
+  padding: 5px 10px;
+  background: white;
+  margin: 2px;
+}
+
+.project button:hover {
+  font-style: italic;
+  text-transform: uppercase;
+  border: solid 2px black;
+}
+
+@media only screen and (max-width: 812px) {
+  .project h3 {
+    line-height: 30px;
+  }
+
+  .project .description {
+    width: 90%;
+  }
+
+  .project img {
+    display: none;
+  }
+
+  .story {
+    width: 100%;
+  }
+
+  .story .description {
+    font-size: 13px;
+    height: 450px;
+  }
+}

@@ -1,0 +1,93 @@
+:root {
+  --lightgrey: #3B4358;
+  --grey: #1B2234;
+  --navy: #052A57;
+  --blue: #004cb0;
+  --lightblue: #E3EAF4;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Alegreya Sans", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  font-family: inherit;
+}
+
+.code {
+  font-family: "Fira Code", sans-serif;
+}
+
+.nunito {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 18px;
+}
+
+.right {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.float-right {
+  float: right;
+}
+
+.right-margin {
+  margin-right: 40px;
+}
+
+.right-text {
+  width: 100%;
+  text-align: right;
+}
+
+.sm-right-margin {
+  margin-right: 5px;
+}
+
+.left-margin {
+  margin-left: 20px;
+}
+
+.init-none {
+  display: none;
+}
+
+.init-hidden {
+  opacity: 0;
+  transition: opacity 0.3s linear;
+}
+
+.purple-fill {
+  background: #e6e6ff;
+}
+
+.sky-blue-border {
+  border-color: #0094bd;
+}
+
+.aqua-fill {
+  background: #edfff3;
+}
+
+.aqua-border {
+  border-color: #50ab6d;
+}
+
+.purple-border {
+  border-color: #6752ba;
+}
+
+.backdrop {
+  padding: 5px 20px;
+}
+
+.blue-tri-bt-r {
+  background: linear-gradient(to bottom right, var(--lightblue) 0%, var(--lightblue) 50%, white, 50%, white 100%);
+}
