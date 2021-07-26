@@ -12,6 +12,7 @@
 .banner h1 {
   font-size: 64px;
   display: inline-block;
+  margin: 0;
 }
 
 .banner p {
@@ -31,7 +32,7 @@
 }
 
 .me-description {
-  transition: opacity 0.4s
+  transition: opacity 0.4s;
 }
 
 .contacts {
@@ -44,8 +45,20 @@
 }
 
 @media only screen and (max-width: 813px) {
+  .banner {
+    padding: 50px 5vw;
+  }
+
   .banner .content {
     font-size: 28px;
     width: 100%;
+    padding-bottom: 30px;
+  }
+
+  .hi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
   }
 }
