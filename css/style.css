@@ -20,6 +20,14 @@ a {
   font-family: inherit;
 }
 
+.box {
+  display: block;
+}
+
+.center {
+  text-align: center;
+}
+
 .code {
   font-family: "Fira Code", sans-serif;
 }

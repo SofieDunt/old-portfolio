@@ -26,10 +26,14 @@
 </div>
 
 <div class="banner">
-  <h1>Hi, I'm&nbsp;</h1>
-  <h1 class="me-description">Sofie.</h1>
-  <h1 class="init-hidden me-description">a second-year student.</h1>
-  <h1 class="init-hidden me-description">slightly addicted to coffee.</h1>
+  <div class="hi">
+    <div class="box">
+      <h1>Hi, I'm&nbsp;</h1>
+      <h1 class="me-description">Sofie.</h1>
+      <h1 class="init-hidden me-description">a second-year student.</h1>
+      <h1 class="init-hidden me-description">slightly addicted to coffee.</h1>
+    </div>
+  </div>
   <div class="content">
     <p>I study computer science, political science, and a bit of math at Northeastern University.
       Learn more <a href="#me">about me</a> and <a href="#projects">my projects</a> below!</p>
@@ -109,102 +113,113 @@
     <h2>Right now, I'm...</h2>
 
     <div class="project purple-fill purple-border">
-      <h3>managing a project && developing software</h3>
-      <div class="description right-margin code">
-        <a href="https://www.c4cneu.com/"><h4>Code4Community</h4></a>
-        <p>
-          while (leading a team of ten developers) {
-        </p>
-        <p class="left-margin">
-          planning, tracking, and contributing to the development of a tree
-          inventorying, reservation, and adoption system in React and Typescript to help
-          <a href="https://treeboston.org/">@SpeakForTheTrees</a> expand Boston's urban forest
-        </p>
-        <p>
-          }
-        </p>
+      <div class="box">
+        <h3>managing a project && developing software</h3>
+        <div class="description right-margin code">
+          <a href="https://www.c4cneu.com/"><h4>Code4Community</h4></a>
+          <p>
+            while (leading a team of ten developers) {
+          </p>
+          <p class="left-margin">
+            planning, tracking, and contributing to the development of a tree
+            inventorying, reservation, and adoption system in React and Typescript to help
+            <a href="https://treeboston.org/">@SpeakForTheTrees</a> expand Boston's urban forest
+          </p>
+          <p>
+            }
+          </p>
+        </div>
       </div>
       <img src="assets/C4C_Circle.png" alt="C4C" class="small-img"/>
     </div>
 
-    <div class="project sky-blue-border right">
-      <h3>researching digital equity</h3>
-      <div class="description sm-right-margin nunito">
-        <h4>Northeastern University, PEAK Bridge-Builder Award</h4>
-        <p>
-          conducting a literature review and data collection as part of a team to find solutions to
-          support older adults isolated by the COVID-19 pandemic and decrease the generational and
-          socioeconomic gap in technology access and use
-        </p>
+    <div class="project sky-blue-border no-image right">
+      <div class="box">
+        <h3>researching digital equity</h3>
+        <div class="description nunito">
+          <h4>Northeastern University, PEAK Bridge-Builder Award</h4>
+          <p>
+            conducting a literature review and data collection as part of a team to find solutions
+            to
+            support older adults isolated by the COVID-19 pandemic and decrease the generational and
+            socioeconomic gap in technology access and use
+          </p>
+        </div>
       </div>
-      <img src="assets/research.png" alt="research" class="small-img"/>
-    </div>
-
-    <div class="project aqua-fill aqua-border no-image story">
-      <h3>developing a choose-your-own-story player and builder</h3>
-      <div class="description code">
-        <h4>Personal Project</h4>
-        <p>
-          a text-based choose-your-own-story web application?
-        </p>
-        <p class="init-hidden story-part">
-          &nbsp;&nbsp;> that's the idea<br>
-          can you play them?
-        </p>
-        <p class="init-hidden story-part">
-          &nbsp;&nbsp;> of course<br>
-          create them?
-        </p>
-        <p class="init-hidden story-part">
-          &nbsp;&nbsp;> yep<br>
-          import and export them?
-        </p>
-        <p class="init-hidden story-part">
-          &nbsp;&nbsp;> how else would you share wild adventures with friends?<br>
-          demonstrating object-oriented programming principles and patterns?
-        </p>
-        <p class="init-hidden story-part">
-          &nbsp;&nbsp;> exactly!
-        </p>
-      </div>
-      <button onclick="handleStoryClick()" id="story-button">Continue...</button>
     </div>
   </div>
 </div>
 
 <div class="section">
   <h2>Some of my completed projects include...</h2>
-  <div class="project sky-blue-border no-image">
-    <h3>this site</h3>
-    <div class="description code">
-      <h4>Personal Project | July 2021</h4>
-      <p>
-        a site designed in Figma and written with HTML, CSS, and a touch of Javascript to keep
-        track of my latest experiences
-      </p>
+
+  <div class="project aqua-fill aqua-border story">
+    <div class="box">
+      <h3>an interactive story player and writer</h3>
+      <div class="description right-margin code">
+        <a href="https://github.com/SofieDunt/saga"><h4>Personal Project| July 2021</h4></a>
+        <p>
+          what's this?
+        </p>
+        <p class="init-hidden story-part">
+          &nbsp;&nbsp;> an application that allows users to play and create interactive stories
+          without any
+          programming knowledge<br>
+          how can I use it?
+        </p>
+        <p class="init-hidden story-part">
+          &nbsp;&nbsp;> you can use the command line for a classic experience or a <a
+            href="https://github.com/SofieDunt/saga-frontend">web interface</a><br>
+          is there a demo?
+        </p>
+        <p class="init-hidden story-part">
+          &nbsp;&nbsp;> <a href="https://sofiedunt.github.io/saga-frontend/">right here!</a><br>
+          can I share stories with friends?
+        </p>
+        <p class="init-hidden story-part">
+          &nbsp;&nbsp;> yup! stories can be imported and exported as text files<br>
+        </p>
+        <button onclick="handleStoryClick()" id="story-button">Continue...</button>
+      </div>
+    </div>
+    <img src="assets/saga.png" alt="saga"/>
+  </div>
+
+  <div class="project sky-blue-border no-image right">
+    <div class="box">
+      <h3>this site</h3>
+      <div class="description code">
+        <h4>Personal Project | July 2021</h4>
+        <p>
+          a site designed in Figma and written with HTML, CSS, and a touch of Javascript to keep
+          track of my latest experiences
+        </p>
+      </div>
     </div>
   </div>
 
-  <div class="project aqua-border right">
-    <h3>an image processor</h3>
-    <div class="description right-margin code">
-      <h4>Class Project | June 2021</h4>
-      <p>
-        an application capable of importing images to, exporting images from, and modifying images
-        in a user's photo library. written in Java and tested with JUnit.
-      </p>
-      <br>
-      <p>Supported modifications include:</p>
-      <br>
-      <button onclick="setButterflyImage(BUTTERFLIES.DEFAULT)">Load Default</button>
-      <button onclick="setButterflyImage(BUTTERFLIES.BLUR)">Blur</button>
-      <button onclick="setButterflyImage(BUTTERFLIES.SHARPEN)">Sharpen</button>
-      <button onclick="setButterflyImage(BUTTERFLIES.SEPIA)">Sepia</button>
-      <button onclick="setButterflyImage(BUTTERFLIES.MONOCHROME)">Greyscale</button>
-      <button onclick="setButterflyImage(BUTTERFLIES.MOSAIC)">Mosaic</button>
-      <br>
-      <br>
-      <p>...and more!</p>
+  <div class="project aqua-border">
+    <div class="box">
+      <h3>an image processor</h3>
+      <div class="description right-margin code">
+        <h4>Class Project | June 2021</h4>
+        <p>
+          an application capable of importing images to, exporting images from, and modifying images
+          in a user's photo library. written in Java and tested with JUnit.
+        </p>
+        <br>
+        <p>Supported modifications include:</p>
+        <br>
+        <button onclick="setButterflyImage(BUTTERFLIES.DEFAULT)">Load Default</button>
+        <button onclick="setButterflyImage(BUTTERFLIES.BLUR)">Blur</button>
+        <button onclick="setButterflyImage(BUTTERFLIES.SHARPEN)">Sharpen</button>
+        <button onclick="setButterflyImage(BUTTERFLIES.SEPIA)">Sepia</button>
+        <button onclick="setButterflyImage(BUTTERFLIES.MONOCHROME)">Greyscale</button>
+        <button onclick="setButterflyImage(BUTTERFLIES.MOSAIC)">Mosaic</button>
+        <br>
+        <br>
+        <p>...and more!</p>
+      </div>
     </div>
     <img src="assets/butterfly/default.PNG" alt="butterfly" class="large-img" id="butterfly-image"/>
   </div>

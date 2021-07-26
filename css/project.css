@@ -1,4 +1,7 @@
 .project {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   width: 70vw;
   height: auto;
   padding: 30px 20px;
@@ -16,7 +19,7 @@
   color: var(--navy);
   font-weight: bold;
   font-size: 30px;
-  line-height: 15px;
+  line-height: 30px;
   margin: 0;
 }
 
@@ -29,9 +32,7 @@
 }
 
 .project img {
-  display: inline-block;
-  max-width: 22%;
-  margin: auto 0;
+  max-width: 40vw;
 }
 
 .small-img {
@@ -40,12 +41,6 @@
 
 .large-img {
   max-height: 200px;
-}
-
-.project .description {
-  display: inline-block;
-  width: 75%;
-  vertical-align: top;
 }
 
 .project p {
@@ -61,8 +56,8 @@
   width: 100%;
 }
 
-.story .description {
-  margin-bottom: 15px;
+#story-button {
+  margin-top: 15px;
 }
 
 .project button {
@@ -80,24 +75,20 @@
 }
 
 @media only screen and (max-width: 812px) {
+  .project {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
   .project h3 {
     line-height: 30px;
   }
 
-  .project .description {
-    width: 90%;
-  }
-
   .project img {
-    display: none;
+    margin-top: 10px;
   }
 
   .story {
     width: 100%;
-  }
-
-  .story .description {
-    font-size: 13px;
-    height: 450px;
   }
 }
