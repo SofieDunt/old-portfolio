@@ -26,14 +26,6 @@ let currentSubject = null;
 let currentStory = 0;
 
 /**
- * On load, set CS as the active subject and begin the description transitions.
- */
-document.addEventListener("DOMContentLoaded", () => {
-  setActiveSubject(SUBJECTS.CS);
-  transitionDescription();
-});
-
-/**
  * Sets the element of the given id to its default style.
  * @param id the element id
  */
@@ -152,3 +144,9 @@ const setButterflyImage = (butterfly) => {
   document.getElementById("butterfly-image").src = "assets/butterfly/"
       + butterfly;
 }
+
+/**
+ * On load, set CS as the active subject and begin the description transitions.
+ */
+setActiveSubject(SUBJECTS.CS);
+transitionDescription();
