@@ -28,10 +28,10 @@ let currentStory = 0;
 /**
  * On load, set CS as the active subject and begin the description transitions.
  */
-const onLoad = () => {
+document.addEventListener("DOMContentLoaded", () => {
   setActiveSubject(SUBJECTS.CS);
   transitionDescription();
-}
+});
 
 /**
  * Sets the element of the given id to its default style.
