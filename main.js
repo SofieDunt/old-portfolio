@@ -4,7 +4,11 @@ const SUBJECTS = {
   ENG: {id: "engineering", buttonId: "engineering-button"},
 }
 const STORY_ELEMENTS = document.getElementsByClassName("story-part");
-const ME_DESCRIPTIONS = document.getElementsByClassName("me-description");
+const ME_DESCRIPTIONS = [
+  "Sofie",
+  "a second-year student",
+  "slightly addicted to coffee"
+];
 const BUTTERFLIES = {
   DEFAULT: "default.PNG",
   BLUR: "butterflyBlur.PNG",
@@ -15,7 +19,9 @@ const BUTTERFLIES = {
   DOWNSCALE: "butterflyDownscale.PNG",
 }
 
-let currentDescription = ME_DESCRIPTIONS.length - 1;
+let currentDescription = 0;
+let currentLetter = 0;
+let erase = false;
 let currentSubject = null;
 let currentStory = 0;
 
@@ -46,20 +52,42 @@ const topHide = (id) => {
 }
 
 /**
- * Transitions between the different me descriptions every 3000 ms.
+ * Transitions between the different me descriptions with a typing effect.
  */
 const transitionDescription = () => {
-  const oldDescription = ME_DESCRIPTIONS[currentDescription];
-  oldDescription.style.fontSize = "0";
-  oldDescription.style.opacity = "0";
-  currentDescription++;
-  if (currentDescription >= ME_DESCRIPTIONS.length) {
-    currentDescription = 0;
+  const description = ME_DESCRIPTIONS[currentDescription];
+
+  /**
+   * Gets the appropriate timeout, updating whether to erase or type and the current description.
+   * @return {number} the timeout
+   */
+  const getWait = () => {
+    if (currentLetter >= description.length) {
+      erase = true;
+      return 2000;
+    } else if (currentLetter === 0) {
+      document.getElementById("me-description").innerHTML = "";
+      currentDescription++;
+      if (currentDescription >= ME_DESCRIPTIONS.length) {
+        currentDescription = 0;
+      }
+      erase = false;
+      return 1000;
+    } else {
+      return 50;
+    }
   }
-  const nextDescription = ME_DESCRIPTIONS[currentDescription];
-  nextDescription.style.fontSize = "64px";
-  nextDescription.style.opacity = "1";
-  setTimeout(transitionDescription, 3000);
+
+  document.getElementById("me-description").innerHTML =
+      description.substring(0, currentLetter + 1);
+
+  if (!erase) {
+    currentLetter++;
+  } else {
+    currentLetter--;
+  }
+
+  setTimeout(transitionDescription, getWait());
 }
 
 /**

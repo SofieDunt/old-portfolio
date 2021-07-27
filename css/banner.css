@@ -27,14 +27,6 @@
   color: var(--lightblue);
 }
 
-.banner .init-hidden {
-  font-size: 0;
-}
-
-.me-description {
-  transition: opacity 0.4s;
-}
-
 .contacts {
   width: 100%;
   text-align: right;
